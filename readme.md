@@ -1,14 +1,17 @@
 # Graham Hayes #
 ## For the Code Challenge for FIG Talent Solutions ##
 
-Unsure of desired behavior for query parameters (i.e. 400 if invalid) & if to default, so behavior is configurable via the Constants defined in the root Settings class:
+## Notes ##
+Unsure of desired behavior for query parameters (i.e. 400 if invalid) & if to default, so behavior is configurable via the Constants defined in the root `Settings.cs` file:
 - `QueryByCritOnInvalid`: 401 if query by parameter is specified but invalid
 - `QueryByDefaultField`: if queryBy is invalid it defaults it to the specified parameter
 
+## Seeding Data ##
 If you want to seed the database with some mock data set `Settings.SeedDatabase` to true
 
 
-End Points are as follows:
+## End Points ##
+ are as follows:
 - [GET] `/teams`
 	- List all teams
 - [GET] `/teams?orderBy=<name/location>`
